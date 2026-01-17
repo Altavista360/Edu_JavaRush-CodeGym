@@ -1,35 +1,33 @@
-/**
- * @author JavaRush's team
- * @author CodeGym's team
- * @author Altavista360
- * @version 1.0.0
+/*
+ * Authors: JavaRush's team, CodeGym's team, Altavista360
+ * Version: 1.0.0
  */
 
-/**
+/*
  * // JavaRush
  * Задача: Личное сообщение 💌
- * @see <a href="https://javarush.com/tasks/ru.javarush.java.core.level01.task05">ru.javarush.java.core.level01.task05</a>
+ * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level01.task05
  */
 
-/**
+/*
  * // CodeGym
  * Task: Personal message 💌
- * @see <a href="https://codegym.cc/tasks/en.codegym.java.core.level01.task05">en.codegym.java.core.level01.task05</a>
+ * Link: https://codegym.cc/tasks/en.codegym.java.core.level01.task05
  */
 
-/**
+/*
  * // JavaRush
- * Описание:
+ * Условие:
  * Создайте переменную типа String с именем myMessage. Присвойте ей значение "I ❤️ YOU". Выведите это сообщение на экран.
  */
 
-/**
+/*
  * // CodeGym
- * Description:
+ * Condition:
  * Create a variable of type String named myMessage. Assign it the value "I ❤️ YOU". Print this message to the screen.
  */
 
-/**
+/*
  * // JavaRush
  * Требования:
  * • В программе должна быть объявлена переменная типа String.
@@ -38,7 +36,7 @@
  * • Значение переменной myMessage должно быть выведено на экран.
  */
 
-/**
+/*
  * // CodeGym
  * Requirements:
  * • The program must declare a variable of type String.
@@ -47,7 +45,7 @@
  * • The value of the myMessage variable must be printed to the screen.
  */
 
-/**
+/*
  * // JavaRush
  * Черновик:
  * package ru.javarush.java.core.level01.task05;
@@ -65,7 +63,7 @@
  * }
  */
 
-/**
+/*
  * // CodeGym
  * Draft:
  * package en.codegym.java.core.level01.task05;
@@ -114,3 +112,41 @@ public class Solution
     }
 }
 */
+
+/*
+ * // JavaRush
+ * Правильное решение:
+ * // Author: JavaRush's team
+ * package ru.javarush.java.core.level01.task05;
+ *
+ * public class Solution
+ * {
+ *     public static void main(String[] args)
+ *     {
+ *         // Объявляем переменную типа String с именем myMessage
+ *         String myMessage = "I ❤️ YOU";
+ *
+ *         // Выводим значение переменной myMessage на экран
+ *         System.out.println(myMessage);
+ *     }
+ * }
+ */
+
+/*
+ * // CodeGym
+ * Correct solution:
+ * // Author: CodeGym's team
+ * package en.codegym.java.core.level01.task05;
+ *
+ * public class Solution
+ * {
+ *     public static void main(String[] args)
+ *     {
+ *         // Declare a variable of type String named myMessage
+ *         String myMessage = "I ❤️ YOU";
+ *
+ *         // Print the value of the myMessage variable to the screen
+ *         System.out.println(myMessage);
+ *     }
+ * }
+ */
