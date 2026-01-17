@@ -1,39 +1,37 @@
-/**
- * @author JavaRush's team
- * @author CodeGym's team
- * @author Altavista360
- * @version 1.0.0
+/*
+ * Authors: JavaRush's team, CodeGym's team, Altavista360
+ * Version: 1.0.0
  */
 
-/**
+/*
  * // JavaRush
  * Задача: Вычисление стоимости заказа 🛍️
- * @see <a href="https://javarush.com/tasks/ru.javarush.java.core.level01.task09">ru.javarush.java.core.level01.task09</a>
+ * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level01.task09
  */
 
-/**
+/*
  * // CodeGym
  * Task: Calculating the order cost 🛍️
- * @see <a href="https://codegym.cc/tasks/en.codegym.java.core.level01.task09">en.codegym.java.core.level01.task09</a>
+ * Link: https://codegym.cc/tasks/en.codegym.java.core.level01.task09
  */
 
-/**
+/*
  * // JavaRush
- * Описание:
+ * Условие:
  * Вы рассчитываете стоимость заказа в магазине. Объявите три переменные типа int: itemPrice со значением 4, itemCount со значением 3, discount со значением 2.
  * Создайте переменную totalCost, в которую запишите значение выражения (itemPrice + itemCount) * discount.
  * После этого создайте переменную finalMessage типа String, в которую вы запишете строку "Итоговая стоимость: " + totalCost, и выведите её на экран.
  */
 
-/**
+/*
  * // CodeGym
- * Description:
+ * Condition:
  * You are calculating the order cost in a shop. Declare three variables of type int: itemPrice with value 4, itemCount with value 3, discount with value 2.
  * Create a variable totalCost, and assign it the value of the expression (itemPrice + itemCount) * discount.
  * After that create a variable finalMessage of type String, in which you will write the string "Final cost: " + totalCost, and print it to the screen.
  */
 
-/**
+/*
  * // JavaRush
  * Требования:
  * • В программе должны быть объявлены три переменные типа int: itemPrice, itemCount и discount.
@@ -42,7 +40,7 @@
  * • Должна быть объявлена переменная finalMessage типа String.
  */
 
-/**
+/*
  * // CodeGym
  * Requirements:
  * • The program must declare three int variables: itemPrice, itemCount and discount.
@@ -53,7 +51,7 @@
  * • The program must print the contents of the variable finalMessage to the screen.
  */
 
-/**
+/*
  * // JavaRush
  * Черновик:
  * package ru.javarush.java.core.level01.task09;
@@ -77,7 +75,7 @@
  * }
  */
 
-/**
+/*
  * // CodeGym
  * Draft:
  * package en.codegym.java.core.level01.task09;
@@ -150,3 +148,57 @@ public class Solution
     }
 }
 */
+
+/*
+ * // JavaRush
+ * Правильное решение:
+ * // Author: JavaRush's team
+ * package ru.javarush.java.core.level01.task09;
+ *
+ * public class Solution
+ * {
+ *     public static void main(String[] args)
+ *     {
+ *         // Объявляем переменные типа int и присваиваем им значения
+ *         int itemPrice = 4; // Цена одного товара
+ *         int itemCount = 3; // Количество товаров
+ *         int discount = 2;  // Скидка
+ *
+ *         // Вычисляем итоговую стоимость заказа
+ *         int totalCost = itemPrice * itemCount - discount;
+ *
+ *         // Формируем итоговое сообщение
+ *         String finalMessage = "Итоговая стоимость: " + totalCost;
+ *
+ *         // Выводим итоговое сообщение на экран
+ *         System.out.println(finalMessage);
+ *     }
+ * }
+ */
+
+/*
+ * // CodeGym
+ * Correct solution:
+ * // Author: CodeGym's team
+ * package en.codegym.java.core.level01.task09;
+ *
+ * public class Solution
+ * {
+ *     public static void main(String[] args)
+ *     {
+ *         // Declare int variables and assign them values
+ *         int itemPrice = 4; // Price of a single item
+ *         int itemCount = 3; // Number of items
+ *         int discount = 2;  // Discount
+ *
+ *         // Calculate the total order cost
+ *         int totalCost = (itemPrice + itemCount) * discount;
+ *
+ *         // Form the final message
+ *         String finalMessage = "Final cost: " + totalCost;
+ *
+ *         // Print the final message to the screen
+ *         System.out.println(finalMessage);
+ *     }
+ * }
+ */
