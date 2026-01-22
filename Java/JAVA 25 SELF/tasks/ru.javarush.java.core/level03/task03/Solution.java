@@ -3,7 +3,7 @@
  * Version: 1.0.0
  */
 
-/*
+/**
  * // JavaRush
  * Задача: Разблокировка аккаунта 🔒
  * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level03.task03
