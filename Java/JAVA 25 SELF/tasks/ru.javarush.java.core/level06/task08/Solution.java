@@ -1,0 +1,96 @@
+/*
+ * Authors: JavaRush's team, CodeGym's team, Altavista360
+ * Version: 1.0.0
+ */
+
+/*
+ * // JavaRush
+ * Задача: Деление магических яблок между друзьями-авантюристами 🍎
+ * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level06.task08
+ */
+
+/*
+ * // CodeGym
+ * Task: Dividing magical apples among adventurer friends 🍎
+ * Link: https://codegym.cc/tasks/en.codegym.java.core.level06.task08
+ */
+
+/*
+ * // JavaRush
+ * Условие:
+ * Вы — хранитель магических яблок, которые дают невероятную силу. У вас есть 7 таких яблок (int totalApples) и 2 друга-авантюриста (int numberOfFriends), которым вы хотите их поделить поровну.
+ * Однако, поскольку яблоки магические, их можно делить на части! Вычислите, сколько яблок достанется каждому другу, если делить яблоки поровну, при этом результат должен быть представлен как дробное число, чтобы отразить потенциальные части яблок.
+ * Сохраните этот точный результат в переменную типа double с именем applesPerFriend и затем покажите, какая же именно доля достанется каждому, выведя applesPerFriend на экран.
+ */
+
+/*
+ * // JavaRush
+ * Требования:
+ * • В программе должны быть объявлены две переменные типа int: totalApples и numberOfFriends.
+ * • Деление должно быть выполнено так, чтобы результат был представлен как дробное число (double), а не как целое.
+ * • Результат деления должен быть сохранён в переменную типа double с именем applesPerFriend.
+ * • На экран должно быть выведено значение переменной applesPerFriend, отражающее точную долю яблок на одного друга.
+ */
+
+/*
+ * // JavaRush
+ * Черновик:
+ * package ru.javarush.java.core.level06.task08;
+ *
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         // Объявляем общее количество магических яблок
+ *
+ *
+ *         // Объявляем количество друзей-авантюристов
+ *
+ *
+ *         // Приводим totalApples к типу double перед делением, чтобы сохранить дробную часть результата
+ *
+ *
+ *         // Выводим точную долю яблок на одного друга (с дробной частью) на экран
+ *
+ *     }
+ * }
+ */
+
+// JavaRush
+package ru.javarush.java.core.level06.task08;
+
+public class Solution {
+    public static void main(String[] args) {
+        // Объявляем общее количество магических яблок
+        int totalApples = 7;
+
+        // Объявляем количество друзей-авантюристов
+        int numberOfFriends = 2;
+
+        // Приводим totalApples к типу double перед делением, чтобы сохранить дробную часть результата
+        double applesPerFriend = (double) totalApples / numberOfFriends;
+
+        // Выводим точную долю яблок на одного друга (с дробной частью) на экран
+        System.out.println(applesPerFriend);
+    }
+}
+
+/*
+ * // JavaRush
+ * Правильное решение:
+ * // Author: JavaRush's team
+ * package ru.javarush.java.core.level06.task08;
+ *
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         // Объявляем общее количество магических яблок
+ *         int totalApples = 7;
+ *         // Объявляем количество друзей-авантюристов
+ *         int numberOfFriends = 2;
+ *
+ *         // Приводим totalApples к типу double перед делением, чтобы сохранить дробную часть результата
+ *         double applesPerFriend = (double) totalApples / numberOfFriends;
+ *
+ *         // Выводим точную долю яблок на одного друга (с дробной частью) на экран
+ *         System.out.println(applesPerFriend);
+ *     }
+ * }
+ */
