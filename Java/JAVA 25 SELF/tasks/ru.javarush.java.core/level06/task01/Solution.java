@@ -35,7 +35,6 @@
 /*
  * // JavaRush
  * Черновик:
- * Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.
  * package ru.javarush.java.core.level06.task01;
  *
  * public class Solution {
