@@ -1,0 +1,93 @@
+/*
+ * Authors: JavaRush's team, CodeGym's team, Altavista360
+ * Version: 1.0.0
+ */
+
+/*
+ * // JavaRush
+ * Задача: Точный расчёт стоимости эликсира с налогом 💰
+ * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level06.task14
+ */
+
+/*
+ * // CodeGym
+ * Task: Accurate calculation of elixir cost with tax 💰
+ * Link: https://codegym.cc/tasks/en.codegym.java.core.level06.task14
+ */
+
+/*
+ * // JavaRush
+ * Условие:
+ * Вы владеете магической лавкой, и вам нужно точно рассчитать конечную стоимость эликсира с учётом налога, который часто приводит к длинным дробным числам.
+ * Допустим, после всех расчётов цена эликсира elixirPriceWithTax составляет 17.34567 серебряных монет.
+ * Вам нужно вывести эту цену на ценнике так, чтобы она отображалась только с двумя знаками после запятой, поскольку монеты не делятся на более мелкие части.
+ * Используйте умножение на 100, Math.round, а затем деление на 100.0, чтобы добиться идеальной точности и правильного округления.
+ * Выведите этот окончательный, округлённый displayPrice на экран.
+ */
+
+/*
+ * // JavaRush
+ * Требования:
+ * • Необходимо округлить значение elixirPriceWithTax до двух знаков после запятой.
+ * • Для округления нужно умножить elixirPriceWithTax на 100, затем применить Math.round, после чего разделить результат на 100.0.
+ * • Окончательная цена displayPrice должна быть типа double и содержать округлённое значение.
+ * • Округлённая цена displayPrice должна быть выведена на экран.
+ */
+
+/*
+ * // JavaRush
+ * Черновик:
+ * package ru.javarush.java.core.level06.task14;
+ *
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         // Исходная цена эликсира с налогом
+ *
+ *
+ *         // Округляем до двух знаков после запятой:
+ *         // Умножаем на 100, округляем с помощью Math.round, затем делим на 100.0
+ *
+ *
+ *         // Выводим округлённую цену на экран
+ *
+ *     }
+ * }
+ */
+
+// JavaRush
+package ru.javarush.java.core.level06.task14;
+
+public class Solution {
+    public static void main(String[] args) {
+        // Исходная цена эликсира с налогом
+        double elixirPriceWithTax = 17.34567;
+
+        // Округляем до двух знаков после запятой:
+        // Умножаем на 100, округляем с помощью Math.round, затем делим на 100.0
+        double displayPrice = Math.round(elixirPriceWithTax * 100) / 100.0;
+
+        // Выводим округлённую цену на экран
+        System.out.println(displayPrice);
+    }
+}
+
+/*
+ * // JavaRush
+ * Правильное решение:
+ * // Author: JavaRush's team
+ * package ru.javarush.java.core.level06.task14;
+ *
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         // Исходная цена эликсира с налогом
+ *         double elixirPriceWithTax = 17.34567;
+ *
+ *         // Округляем до двух знаков после запятой:
+ *         // Умножаем на 100, округляем с помощью Math.round, затем делим на 100.0
+ *         double displayPrice = Math.round(elixirPriceWithTax * 100) / 100.0;
+ *
+ *         // Выводим округлённую цену на экран
+ *         System.out.println(displayPrice);
+ *     }
+ * }
+ */
