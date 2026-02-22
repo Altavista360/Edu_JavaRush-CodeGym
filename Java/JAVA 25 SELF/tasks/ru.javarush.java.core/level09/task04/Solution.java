@@ -11,7 +11,7 @@
 
 /*
  * // CodeGym
- * Task: Lorem ipsum dolor sit amet consectetur adipiscing elit.
+ * Task: Unicode characters and emojis in a string
  * Link: https://codegym.cc/tasks/en.codegym.java.core.level09.task04
  */
 
