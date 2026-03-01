@@ -1,0 +1,165 @@
+/*
+ * Authors: JavaRush's team, CodeGym's team, Altavista360
+ * Version: 1.0.0
+ */
+
+/*
+ * // JavaRush
+ * Задача: Карманный калькулятор ➕
+ * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level10.task12
+ */
+
+/*
+ * // CodeGym
+ * Task: Pocket calculator ➕
+ * Link: https://codegym.cc/tasks/en.codegym.java.core.level10.task12
+ */
+
+/*
+ * // JavaRush
+ * Условие:
+ * Вы пишете простенький калькулятор для умных часов, который умеет выполнять четыре базовые арифметические операции. Пользователь вводит два числа и символ операции, а калькулятор выдаёт результат.
+ * Попросите пользователя ввести два целых числа. Затем попросите ввести символ операции: '+', '-', '*' или '/'. Используйте оператор switch для выбора соответствующей операции и выведите результат вычисления. Важно: деление должно быть целочисленным. Если пользователь введёт неизвестный символ операции, часы должны отобразить "Неизвестная операция".
+ */
+
+/*
+ * // JavaRush
+ * Требования:
+ * • Программа должна запрашивать у пользователя ввод двух целых чисел.
+ * • Программа должна запрашивать у пользователя ввод символа операции: '+', '-', '*' или '/'.
+ * • Для выбора арифметической операции программа должна использовать оператор switch по введённому символу.
+ * • Программа должна выполнять соответствующую арифметическую операцию над двумя числами. Деление должно быть целочисленным.
+ * • Если пользователь ввёл символ операции, отличный от '+', '-', '*' или '/', программа должна вывести "Неизвестная операция".
+ */
+
+/*
+ * // JavaRush
+ * Черновик:
+ * package ru.javarush.java.core.level10.task12;
+ *
+ * import java.util.Scanner;
+ *
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         Scanner console = new Scanner(System.in);
+ *
+ *         // Просим ввести два целых числа
+ *         System.out.println("Введите первое целое число:");
+ *         int a = console.nextInt();
+ *
+ *         System.out.println("Введите второе целое число:");
+ *         int b = console.nextInt();
+ *
+ *         // Просим ввести символ операции
+ *         System.out.println("Введите операцию (+, -, *, /):");
+ *         char op = console.next().charAt(0); // Берем первый символ введенной строки
+ *
+ *         int result; // Здесь будем хранить результат вычисления
+ *
+ *         // Классический switch по символу операции
+ *
+ *
+ *
+ *
+ *
+ *         // Выводим результат вычисления
+ *         System.out.println(result);
+ *     }
+ * }
+ */
+
+// JavaRush
+package ru.javarush.java.core.level10.task12;
+
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+
+        // Просим ввести два целых числа
+        System.out.println("Введите первое целое число:");
+        int a = console.nextInt();
+
+        System.out.println("Введите второе целое число:");
+        int b = console.nextInt();
+
+        // Просим ввести символ операции
+        System.out.println("Введите операцию (+, -, *, /):");
+        char op = console.next().charAt(0); // Берем первый символ введенной строки
+
+        int result; // Здесь будем хранить результат вычисления
+
+        // Классический switch по символу операции
+        switch (op) {
+            case '+':
+                result = a + b;
+                break;
+            case '-':
+                result = a - b;
+                break;
+            case '*':
+                result = a * b;
+                break;
+            case '/':
+                result = a / b;
+                break;
+            default:
+                System.out.println("Неизвестная операция");
+                return;
+        }
+        // Выводим результат вычисления
+        System.out.println(result);
+    }
+}
+
+/*
+ * // JavaRush
+ * Правильное решение:
+ * // Author: JavaRush's team
+ * package ru.javarush.java.core.level10.task12;
+ *
+ * import java.util.Scanner;
+ *
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         Scanner console = new Scanner(System.in);
+ *
+ *         // Просим ввести два целых числа
+ *         System.out.println("Введите первое целое число:");
+ *         int a = console.nextInt();
+ *
+ *         System.out.println("Введите второе целое число:");
+ *         int b = console.nextInt();
+ *
+ *         // Просим ввести символ операции
+ *         System.out.println("Введите операцию (+, -, *, /):");
+ *         char op = console.next().charAt(0); // Берем первый символ введенной строки
+ *
+ *         int result; // Здесь будем хранить результат вычисления
+ *
+ *         // Классический switch по символу операции
+ *         switch (op) {
+ *             case '+':
+ *                 result = a + b;
+ *                 break;
+ *             case '-':
+ *                 result = a - b;
+ *                 break;
+ *             case '*':
+ *                 result = a * b;
+ *                 break;
+ *             case '/':
+ *                 result = a / b; // Целочисленное деление
+ *                 break;
+ *             default:
+ *                 // Сообщаем об ошибке, если введена неизвестная операция
+ *                 System.out.println("Неизвестная операция");
+ *                 return; // Завершаем программу без вывода результата
+ *         }
+ *
+ *         // Выводим результат вычисления
+ *         System.out.println(result);
+ *     }
+ * }
+ */
