@@ -1,0 +1,103 @@
+/*
+ * Authors: JavaRush's team, CodeGym's team, Altavista360
+ * Version: 1.0.0
+ */
+
+/*
+ * // JavaRush
+ * Задача: Обработка ответов сервера 🌐
+ * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level10.task17
+ */
+
+/*
+ * // CodeGym
+ * Task: Handling server responses 🌐
+ * Link: https://codegym.cc/tasks/en.codegym.java.core.level10.task17
+ */
+
+/*
+ * // JavaRush
+ * Условие:
+ * Вы разрабатываете серверную часть веб-приложения, которая должна корректно реагировать на статусы HTTP-запросов. Каждый числовой код статуса требует определённого текстового сообщения для пользователя или логов.
+ * Создайте переменную int httpStatusCode и присвойте ей значение 200. Используйте новый синтаксис switch-выражения, чтобы присвоить строковой переменной responseMessage следующие значения:
+ * • "OK" — если httpStatusCode равен 200.
+ * • "Ошибка клиента" — если httpStatusCode равен 400 или 404.
+ * • "Ошибка сервера" — если httpStatusCode равен 500.
+ * • "Неизвестный код" — для любого другого значения.
+ * После определения, выведите responseMessage на экран.
+ */
+
+/*
+ * // JavaRush
+ * Требования:
+ * • В программе должна быть объявлена переменная типа int с именем httpStatusCode и присвоено значение 200.
+ * • Для определения значения переменной responseMessage должен быть использован современный синтаксис switch-выражения (Java 14+), а не классический switch-case.
+ * • В switch-выражении статусы 400 и 404 должны быть обработаны в одном case и присваивать значение "Ошибка клиента".
+ * • Для всех значений httpStatusCode, кроме 200, 400, 404 и 500, переменной responseMessage должно присваиваться значение "Неизвестный код" с помощью default-ветки switch-выражения.
+ * • После определения значения переменной responseMessage её значение должно быть выведено на экран.
+ */
+
+/*
+ * // JavaRush
+ * Черновик:
+ * package ru.javarush.java.core.level10.task17;
+ *
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         // Числовой код HTTP-статуса
+ *         int httpStatusCode = 200;
+ *
+ *         // Новый синтаксис switch-выражения:
+ *
+ *
+ *         // Вывод результата на экран
+ *
+ *     }
+ * }
+ */
+
+// JavaRush
+package ru.javarush.java.core.level10.task17;
+
+public class Solution {
+    public static void main(String[] args) {
+        // Числовой код HTTP-статуса
+        int httpStatusCode = 200;
+
+        // Новый синтаксис switch-выражения:
+        String responseMessage = switch (httpStatusCode) {
+            case 200 -> 'OK';
+            case 400, 404 -> 'Ошибка клиента';
+            case 500 -> 'Ошибка сервера';
+            default -> 'Неизвестный код';
+        };
+
+        // Вывод результата на экран
+        System.out.println(responseMessage);
+    }
+}
+
+/*
+ * // JavaRush
+ * Правильное решение:
+ * // Author: JavaRush's team
+ * package ru.javarush.java.core.level10.task17;
+ *
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         // Числовой код HTTP-статуса
+ *         int httpStatusCode = 200;
+ *
+ *         // Новый синтаксис switch-выражения:
+ *         String responseMessage = switch (httpStatusCode) {
+ *             case 200 -> "OK";
+ *             case 400, 404 -> "Ошибка клиента";
+ *             case 500 -> "Ошибка сервера";
+ *             default -> "Неизвестный код";
+ *         };
+ *
+ *         // Вывод результата на экран
+ *         System.out.println(responseMessage);
+ *     }
+ * }
+ */
