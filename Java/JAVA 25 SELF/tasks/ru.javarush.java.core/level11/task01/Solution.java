@@ -5,7 +5,7 @@
 
 /*
  * // JavaRush
- * Задача: Lorem ipsum dolor sit amet consectetur adipiscing elit.
+ * Задача: Зорг-калькулятор и великое деление на ноль 🌌
  * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level11.task01
  */
 
