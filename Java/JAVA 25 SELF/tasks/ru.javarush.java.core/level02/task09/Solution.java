@@ -59,7 +59,7 @@ public class Solution {
         int foo = 131072;
 
         // Преобразуем целочисленное значение accessCode в строку
-        String accessCode = String.valueOf (foo);
+        String accessCode = String.valueOf(foo);
 
         // Выводим полученную строку на экран
         System.out.println(accessCode);
