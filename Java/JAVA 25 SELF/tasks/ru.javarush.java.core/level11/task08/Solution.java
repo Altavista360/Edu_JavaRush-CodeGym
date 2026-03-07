@@ -1,0 +1,114 @@
+/*
+ * Authors: JavaRush's team, CodeGym's team, Altavista360
+ * Version: 1.0.0
+ */
+
+/*
+ * // JavaRush
+ * Задача: Система управления критической миссией 🚀
+ * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level11.task08
+ */
+
+/*
+ * // CodeGym
+ * Task: Critical Mission Control System 🚀
+ * Link: https://codegym.cc/tasks/en.codegym.java.core.level11.task08
+ */
+
+/*
+ * // JavaRush
+ * Условие:
+ * Вы разрабатываете систему управления критически важной миссией. Иногда могут возникать внештатные ситуации, но программа ни в коем случае не должна "зависнуть" или аварийно завершиться. Она должна корректно пройти все этапы и сообщить о завершении.
+ * Объявите две переменные: int primaryValue = 10 ; и int secondaryValue = 0 ;.
+ * В блоке try попытайтесь разделить primaryValue на secondaryValue и вывести результат. Конечно же, это приведёт к ошибке.
+ * Перехватите это исключение в блоке catch и выведите короткое, но информативное сообщение: "Ошибка деления. Продолжаем работу системы."
+ * Самое главное: убедитесь, что после всего блока try-catch программа продолжает свою работу и выводит сообщение "Миссия завершена. Программа завершена." Это покажет, что система устойчива к сбоям и всегда достигает своего логического конца.
+ */
+
+/*
+ * // JavaRush
+ * Требования:
+ * • В программе должны быть объявлены две переменные: int primaryValue = 10 и int secondaryValue = 0.
+ * • Операция деления primaryValue на secondaryValue должна быть помещена в блок try.
+ * • В случае возникновения ArithmeticException при делении, программа должна обработать его в блоке catch.
+ * • В блоке catch должно выводиться сообщение: "Ошибка деления. Продолжаем работу системы."
+ * • После завершения блока try-catch программа должна продолжать выполнение.
+ * • После блока try-catch должно выводиться сообщение: "Миссия завершена. Программа завершена."
+ */
+
+/*
+ * // JavaRush
+ * Черновик:
+ * package ru.javarush.java.core.level11.task08;
+ *
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         // Объявляем переменные primaryValue и secondaryValue
+ *
+ *
+ *         try {
+ *             // Пытаемся выполнить деление primaryValue на secondaryValue
+ *
+ *
+ *         } catch (ArithmeticException e) {
+ *             // Обрабатываем исключение деления на ноль
+ *
+ *
+ *         }
+ *
+ *         // Выводим финальное сообщение, подтверждающее завершение программы
+ *
+ *     }
+ * }
+ */
+
+// JavaRush
+package ru.javarush.java.core.level11.task08;
+
+public class Solution {
+    public static void main(String[] args) {
+        // Объявляем переменные primaryValue и secondaryValue
+        int primaryValue = 10;
+        int secondaryValue = 0;
+
+        try {
+            // Пытаемся выполнить деление primaryValue на secondaryValue
+            int answer = primaryValue / secondaryValue;
+            System.out.println("Результат: " + answer);
+        } catch (ArithmeticException e) {
+            // Обрабатываем исключение деления на ноль
+            System.out.println("Ошибка деления. Продолжаем работу системы.");
+
+        }
+
+        // Выводим финальное сообщение, подтверждающее завершение программы
+        System.out.println("Миссия завершена. Программа завершена.");
+    }
+}
+
+/*
+ * // JavaRush
+ * Правильное решение:
+ * // Author: JavaRush's team
+ * package ru.javarush.java.core.level11.task08;
+ *
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         // Объявляем переменные primaryValue и secondaryValue
+ *         int primaryValue = 10;
+ *         int secondaryValue = 0;
+ *
+ *         try {
+ *             // Пытаемся выполнить деление primaryValue на secondaryValue
+ *             int result = primaryValue / secondaryValue;
+ *             System.out.println("Результат: " + result);
+ *         } catch (ArithmeticException e) {
+ *             // Обрабатываем исключение деления на ноль
+ *             System.out.println("Ошибка деления. Продолжаем работу системы.");
+ *         }
+ *
+ *         // Выводим финальное сообщение, подтверждающее завершение программы
+ *         System.out.println("Миссия завершена. Программа завершена.");
+ *     }
+ * }
+ */
