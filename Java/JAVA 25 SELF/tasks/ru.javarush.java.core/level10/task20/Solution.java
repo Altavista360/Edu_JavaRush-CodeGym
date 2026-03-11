@@ -5,7 +5,7 @@
 
 /*
  * // JavaRush
- * Задача: Lorem ipsum dolor sit amet consectetur adipiscing elit.
+ * Задача: Автоматическое присвоение оценок студентам 🎓
  * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level10.task20
  */
 
