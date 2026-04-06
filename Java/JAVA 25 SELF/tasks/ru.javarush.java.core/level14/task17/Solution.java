@@ -5,7 +5,7 @@
 
 /*
  * // JavaRush
- * Задача: Lorem ipsum dolor sit amet consectetur adipiscing elit.
+ * Задача: Наблюдение за появлением виртуальных существ
  * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level14.task17
  */
 
