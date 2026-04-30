@@ -1,0 +1,108 @@
+/*
+ * Authors: JavaRush's team, CodeGym's team, Altavista360
+ * Version: 1.0.0
+ */
+
+/*
+ * // JavaRush
+ * Задача: Звуки зоопарка: Лай собаки 🐕
+ * Ссылка: https://javarush.com/tasks/ru.javarush.java.core.level17.task06
+ */
+
+/*
+ * // CodeGym
+ * Task: Zoo Sounds: Dog Bark 🐕
+ * Link: https://codegym.cc/tasks/en.codegym.java.core.level17.task06
+ */
+
+/*
+ * // JavaRush
+ * Условие:
+ * Вы разрабатываете захватывающий симулятор зоопарка, где каждое животное издаёт свой уникальный звук. Начните с создания базового класса Animal, который будет содержать общий метод void makeSound(), выводящий на экран "Some animal sound". Это будет звук по умолчанию для любого животного.
+ * Теперь настало время для одного из самых популярных обитателей зоопарка — собаки. Создайте класс Dog, который будет наследовать от Animal. Собаки, конечно же, лают! Поэтому вам нужно переопределить метод makeSound() в классе Dog так, чтобы он выводил "Woof!". Для лучшей практики и для того, чтобы помочь компилятору проверить правильность переопределения, обязательно используйте аннотацию @Override перед методом.
+ * В вашем основном методе main создайте объект Dog и затем попросите его издать звук, вызвав метод makeSound(). Ваш симулятор должен уверенно воспроизвести: "Woof!".
+ */
+
+/*
+ * // JavaRush
+ * Требования:
+ * • В программе должен быть объявлен класс Animal.
+ * • Класс Animal должен содержать метод void makeSound(), который выводит на экран строку "Some animal sound".
+ * • В программе должен быть объявлен класс Dog, который наследует класс Animal.
+ * • В классе Dog должен быть переопределён метод makeSound(), который выводит на экран строку "Woof!".
+ * • Переопределённый метод makeSound() в классе Dog должен быть помечен аннотацией @Override.
+ * • В методе main должен быть создан объект класса Dog и вызван его метод makeSound(), чтобы на экран вывелось "Woof!".
+ */
+
+/*
+ * // JavaRush
+ * Черновик:
+ * package ru.javarush.java.core.level17.task06;
+ *
+ * // Симулятор зоопарка: демонстрация наследования и переопределения методов
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         // Создаем собаку и просим подать голос
+ *         Dog dog = new Dog();
+ *         dog.makeSound(); // Должно вывести "Woof!"
+ *     }
+ * }
+ */
+
+// JavaRush
+package ru.javarush.java.core.level17.task06;
+
+// Симулятор зоопарка: демонстрация наследования и переопределения методов
+public class Solution {
+    public static void main(String[] args) {
+        // Создаем собаку и просим подать голос
+        Dog dog = new Dog();
+        dog.makeSound(); // Должно вывести "Woof!"
+    }
+}
+
+class Animal {
+    void makeSound() {
+        System.out.println("Some animal sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Woof!");
+    }
+}
+
+/*
+ * // JavaRush
+ * Правильное решение:
+ * // Author: JavaRush's team
+ * package ru.javarush.java.core.level17.task06;
+ *
+ * // Симулятор зоопарка: демонстрация наследования и переопределения методов
+ * public class Solution {
+ *     public static void main(String[] args) {
+ *         // Создаем собаку и просим подать голос
+ *         Dog dog = new Dog();
+ *         dog.makeSound(); // Должно вывести "Woof!"
+ *     }
+ * }
+ *
+ * // Базовый класс с "общим" поведением для всех животных
+ * class Animal {
+ *     // Звук по умолчанию для любого животного
+ *     void makeSound() {
+ *         System.out.println("Some animal sound");
+ *     }
+ * }
+ *
+ * // Собака наследует Animal и переопределяет звук
+ * class Dog extends Animal {
+ *     // Аннотация @Override помогает компилятору убедиться, что метод действительно переопределен
+ *     @Override
+ *     void makeSound() {
+ *         System.out.println("Woof!");
+ *     }
+ * }
+ */
