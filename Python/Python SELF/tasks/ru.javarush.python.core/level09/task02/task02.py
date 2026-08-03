@@ -55,9 +55,13 @@ class Library:
 
 library = Library()
 
-library.add_book("War and Peace")
-library.add_book("1984")
-library.add_book("The Great Gatsby")
+library.add_book("Harry Potter and the Philosopher's Stone")
+library.add_book("Harry Potter and the Chamber of Secrets")
+library.add_book("Harry Potter and the Prisoner of Azkaban")
+library.add_book("Harry Potter and the Goblet of Fire")
+library.add_book("Harry Potter and the Order of the Phoenix")
+library.add_book("Harry Potter and the Half-Blood Prince")
+library.add_book("Harry Potter and the Deathly Hallows")
 
 library.display_books()
 
