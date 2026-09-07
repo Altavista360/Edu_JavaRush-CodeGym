@@ -1,0 +1,56 @@
+/*
+## Authors: JavaRush's team, CodeGym's team, Altavista360
+## Version: 1.0.0
+*/
+
+/*
+### JavaRush
+## Задача: Сортировка мусора.
+## Ссылка: https://javarush.com/tasks/ru.javarush.python.core.level13.task01
+*/
+
+/*
+### JavaRush
+## Условие:
+# Удалите весь код, который не является JSON.
+*/
+
+/*
+### JavaRush
+## Требования:
+# • Файл может содержать только JSON-объекты или массивы JSON-объектов.
+*/
+
+/*
+### JavaRush
+## Черновик:
+# // Сортировка мусора.
+#
+# // Тут пять "объектов". Удалите те, которые не являются JSON
+# [1]
+#
+# {"name": "John"}
+#
+# ["Apple", "Banana", "Cherry", 100, 3.14, None]
+#
+# {
+# "address": {
+# city: "New York",
+# zipCode: "10001"
+# }
+# }
+#
+# {[{[1]}]}
+*/
+
+/*
+### JavaRush
+*/
+{"name": "John"}
+
+/*
+### JavaRush
+## Правильное решение:
+## Author: JavaRush's team
+# {"name": "John"}
+*/
